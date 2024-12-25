@@ -1,8 +1,13 @@
 Name : Khushi Panchal 
+
 Company : CODTECH IT SOLUTIONS 
+
 ID : CT08DS389
+
 Domain : Frontend-Development 
+
 Duration : 5th December 2024 to 5th January 2025
+
 Mentor : Neela Santhosh Kumar 
 
 Personal Portfolio Website 

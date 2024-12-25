@@ -1,0 +1,176 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #444;
+}
+
+h1 span, h2 span {
+  color: #ff6347;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Header Styles */
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 1.5rem;
+}
+
+header .logo span {
+  color: #ff6347;
+}
+
+header .nav-menu {
+  display: none;
+  flex-direction: column;
+}
+
+header .nav-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header .nav-menu ul li {
+  margin: 1rem 0;
+}
+
+header .nav-menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+header .nav-toggle {
+  font-size: 1.5rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #fff;
+}
+
+/* Active Menu Styles */
+header .nav-menu.active {
+  display: flex;
+  position: absolute;
+  top: 4rem;
+  right: 1rem;
+  background: #444;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+/* Section Styles */
+.section {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.section:nth-child(even) {
+  background: #f4f4f4;
+}
+
+.section .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.section .btn {
+  display: inline-block;
+  background: #ff6347;
+  color: #fff;
+  padding: 0.8rem 1.2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.section .btn:hover {
+  background: #e5533d;
+}
+
+/* Form Styles */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+form label {
+  font-weight: bold;
+  display: block;
+  margin-top: 1rem;
+}
+
+form input, form textarea, form button {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form button {
+  background: #ff6347;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+}
+
+form button:hover {
+  background: #e5533d;
+}
+
+/* Footer Styles */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+  header .nav-menu {
+    display: flex;
+    flex-direction: row;
+  }
+
+  header .nav-menu ul li {
+    margin: 0 1rem;
+  }
+
+  header .nav-toggle {
+    display: none;
+  }
+}
